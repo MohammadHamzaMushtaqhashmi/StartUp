@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/StartUp/static/css/main.79e7488d.css",
+    "main.js": "/StartUp/static/js/main.c3f34eff.js",
+    "static/js/787.d07b30b9.chunk.js": "/StartUp/static/js/787.d07b30b9.chunk.js",
+    "static/media/reviewimg.jpeg": "/StartUp/static/media/reviewimg.31c2f331d4050b09e901.jpeg",
+    "static/media/josefin-sans-latin-400-normal.woff": "/StartUp/static/media/josefin-sans-latin-400-normal.8df978cec4cb954d6e06.woff",
+    "static/media/righteous-latin-400-normal.woff": "/StartUp/static/media/righteous-latin-400-normal.40a2381ada8e700fbd80.woff",
+    "static/media/josefin-sans-latin-ext-400-normal.woff": "/StartUp/static/media/josefin-sans-latin-ext-400-normal.eece8b9f17a0371dc87d.woff",
+    "static/media/righteous-latin-400-normal.woff2": "/StartUp/static/media/righteous-latin-400-normal.ff971242700f520e3f61.woff2",
+    "static/media/josefin-sans-latin-400-normal.woff2": "/StartUp/static/media/josefin-sans-latin-400-normal.761b272ec66a5f5bda94.woff2",
+    "static/media/josefin-sans-latin-ext-400-normal.woff2": "/StartUp/static/media/josefin-sans-latin-ext-400-normal.0f09987515ffb170376e.woff2",
+    "static/media/righteous-latin-ext-400-normal.woff": "/StartUp/static/media/righteous-latin-ext-400-normal.d5209d3222193272e5fc.woff",
+    "static/media/righteous-latin-ext-400-normal.woff2": "/StartUp/static/media/righteous-latin-ext-400-normal.c8eff68a7456cce7e462.woff2",
+    "static/media/josefin-sans-vietnamese-400-normal.woff": "/StartUp/static/media/josefin-sans-vietnamese-400-normal.f15be9b55ba603244156.woff",
+    "static/media/josefin-sans-vietnamese-400-normal.woff2": "/StartUp/static/media/josefin-sans-vietnamese-400-normal.6d112623e8b032f69473.woff2",
+    "index.html": "/StartUp/index.html",
+    "main.79e7488d.css.map": "/StartUp/static/css/main.79e7488d.css.map",
+    "main.c3f34eff.js.map": "/StartUp/static/js/main.c3f34eff.js.map",
+    "787.d07b30b9.chunk.js.map": "/StartUp/static/js/787.d07b30b9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.79e7488d.css",
+    "static/js/main.c3f34eff.js"
+  ]
+}
