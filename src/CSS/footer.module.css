@@ -1,0 +1,18 @@
+footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color: black;
+    color: #333;
+    font-size: 14px;
+    padding-top: 56px;
+    padding-bottom: 56px;
+    font-family: 'Josefin Sans', Arial, sans-serif;
+  }
+  
+  footer p {
+    font-size: 16px;
+    color: rgb(145, 145, 145);
+  }
+  

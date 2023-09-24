@@ -1,0 +1,305 @@
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: white;
+}
+
+.heroText, .heroImage {
+  max-width: 50%;
+  height: 400px; /* Adjust as needed */
+}
+
+.heroText {
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+  background-color: #222222;
+}
+
+.heroText h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+}
+
+.heroText p {
+  font-size: 24px;
+  margin-bottom: 40px;
+}
+
+.heroText button {
+  background-color: #ff9900;
+  color: black;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 30px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.heroImage img {
+  width: 100%;
+  height: 400px; /* This will maintain the aspect ratio of the image */
+}
+
+.about{
+  color: rgb(80, 125, 229);
+  line-height: 2.4;
+  text-align: center;
+  font-weight: 400;
+  font-size: 28px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-family: 'Righteous', serif, system-ui;
+  padding-top: 20px;
+}
+.service {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 30px;
+  margin: 30px;
+}
+.service > .row, .service > .rowReverse  {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.service > .row > div, .service > .rowReverse > div {
+  flex: 1 0 50%; /* This will make each div take up 50% of the container's width */
+}
+.service > .rowReverse {
+  flex-direction: row-reverse; /* This will reverse the order of the image and text */
+}
+.service img {
+  width: 400px;
+  height: 200px;
+  padding: 20px;
+  margin: 7px;
+}
+.text{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+.text h2 {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: 22px;
+  font-weight: 400;
+  color: rgb(27, 27, 27)
+}
+
+.text p {
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  font-size: 16px;
+  color: rgb(94, 94, 94);
+  line-height: 1.5;
+  word-wrap: break-word;
+  text-align: center;
+  max-width: 90%;
+}
+
+.reviews {
+  /* Use the image as a background */
+  background-image: url('../../public/images/reviewimg.jpeg');
+  background-size: cover;
+  background-position: center;
+  width: 100%;
+  height: 300px; /* Adjust as needed */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-top: 40px;
+  padding-bottom: 0px;
+  text-shadow: 0px 2px 30px rgba(0, 0, 0, 0.12);
+}
+
+.reviewContent {
+  /* Style the text */
+  text-align: center;
+  color: white; /* Change this to the color you want for the text */
+}
+
+.reviewContent h1 {
+  font-size: 33px; /* Adjust as needed */
+  color: rgb(255, 255, 255);
+  margin-bottom: 56px;
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Righteous', serif, system-ui;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+.reviewContent p {
+  font-size: 16px; /* Adjust as needed */
+  text-align: center;
+  padding-bottom: 16px;
+  padding-top: 16px;
+  background-color: rgba(22, 22, 22, 0.5);
+  padding-right: 200px;
+  padding-left: 200px;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  text-transform: none;
+
+}
+
+.contactline{
+  font-size: 22px;
+  margin-bottom: 24px;
+  line-height: 1.25;
+  font-weight: 400;
+  color: rgb(27, 27, 27);
+  font-family: "Josefin Sans", Arial, sans-serif;
+  text-transform: none;
+  text-align: center;
+}
+.contact { 
+  background-color: #f0f0f0;
+   padding: 20px; 
+   margin: 20px; 
+   border-radius: 10px; 
+   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+   max-width: 600px;
+   margin-left: auto;
+   margin-right: auto;
+  }
+
+
+.form { display: flex; flex-direction: column; align-items: center; gap: 20px; }
+
+.input { width: 80%; margin: 10px; }
+
+.input input { width: 100%; height: 40px; border: none; outline: none; padding: 10px; font-size: 16px; border-bottom: 2px solid #ccc; }
+
+.input input:focus { border-color: #00a8ff; }
+
+.input input::placeholder { color: #999; }
+
+.textarea { width: 80%; margin: 10px; }
+
+.textarea textarea { width: 100%; height: 100px; border: none; outline: none; padding: 10px; font-size: 16px; border-bottom: 2px solid #ccc; resize: none; }
+
+.textarea textarea:focus { border-color: #00a8ff; }
+
+.textarea textarea::placeholder { color: #999; }
+
+.attachfile { 
+  width: 80%;
+   margin: 10px; 
+   display: flex;
+    align-items: center; 
+    justify-content: space-between; 
+  }
+
+.attachfile label { font-weight: bold; color: #333; }
+
+.attachfile input { display: none; }
+
+.attachfile button { height: 40px; 
+  width: 120px; 
+  border-radius: 20px; 
+  border: none; outline: 
+  none; background-color: #00a8ff; 
+  color: white; font-size: 16px; cursor: pointer;
+
+}
+
+.attachfile button:hover { background-color:#0097e6;
+
+}
+
+.sendbutton { width :80%; margin :10px;
+
+}
+
+.sendbutton button{ height :40px ; width :100% ; border-radius :20px ; border :none ; outline :none ; background-color :#00a8ff ; color :white ; font-size :16px ; cursor :pointer ;
+
+}
+
+.sendbutton button:hover{ background-color:#0097e6 ;
+
+} 
+.subscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+
+.subscribe h1 {
+  font-size: 32px;
+  margin-bottom: 32px;
+  color: rgb(27, 27, 27);
+  font-weight: 400;
+  line-height: 1.2;
+  font-family: 'Righteous', serif, system-ui;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  box-sizing: inherit;
+}
+
+.subscribe p {
+  display: flex;
+  flex-direction: row;
+  font-size: 16px;
+  margin-bottom: 20px;
+  color: rgb(94, 94, 94);
+  line-height: 1.5;
+  margin-bottom: 16px;
+  overflow-wrap: break-word;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  text-transform: none;
+  letter-spacing: normal;
+  box-sizing: inherit;
+}
+
+
+.inputrow input {
+  flex-grow: 1;
+  margin-right: 20px;
+}
+
+.subscribe input {
+  color: rgb(71, 71, 71);
+  border-style: solid;
+  padding-bottom: 7px;
+  padding-top: 23px;
+  padding-right: 16px;
+  padding-left: 16px;
+  margin-bottom: 20px;
+  border-bottom-width: 4px;
+  border-color: rgb(218, 218, 218);
+  background-color: rgb(246, 246, 246);
+  font-family: "Josefin Sans", Arial, sans-serif;
+  vertical-align: middle;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: normal;
+  width: 300px;
+  height: 20px;
+  
+}
+
+.subscribe button {
+  display: inline-flex;
+  text-shadow: none;
+  font-weight: 600;
+  min-height: 56px;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  padding-left: 32px;
+  padding-right: 32px;
+  background-color: black;
+  color: white;
+  border-style: none;
+  text-transform: uppercase;
+  letter-spacing: 0.063em;
+  font-size: 14px;
+  position: relative;
+  text-align: center;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+  font-family: "Josefin Sans", Arial, sans-serif;
+  overflow: visible;
+}
