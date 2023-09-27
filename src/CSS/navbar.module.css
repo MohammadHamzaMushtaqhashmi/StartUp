@@ -1,113 +1,136 @@
 .navbar {
-    display: flex;
-    align-items: center;
-    padding: 24px;
-    background-color: rgb(255, 255, 255);
-    z-index: auto;
-    position: relative;
-    font-size: 16px;
-    font-family: 'Josefin Sans', Arial, sans-serif;
-  }
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 24px;
+  background-color: rgb(255, 255, 255);
+  z-index: auto;
+  position: relative;
+  font-size: 16px;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  color: rgb(67, 112, 217);
+}
+
+.navItems {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.title {
+  display: inline-block;
+  font-weight: 400;
+  font-size: 28px;
+  color: rgb(67, 112, 217);
+  font-family: 'Josefin Sans', Arial, sans-serif;
+}
+
+
+
+
+
+.link {
   
-  .navItems {
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-  }
-  
-  .title {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 28px;
-    color: rgb(67, 112, 217);
-    font-family: 'Josefin Sans', Arial, sans-serif;
-  }
-  
-  .navLinks {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-  }
-  
-  .linkContainer {
-    display: flex;
-  }
-  
-  .link {
-    
-    margin-top: 16px;
-    margin-right: 16px;
-    padding: 6px;
-    color: rgb(27,27,27);
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: .063em;
-    text-decoration: none; /* Removes underline */
-    text-transform: uppercase;
-    font-family: 'Josefin Sans', Arial, sans-serif;
-  }
-  
-  .link:hover {
-      color: rgb(67,112,217); /* Changes color on hover */
-  }
-  
-/*
-.navbar {
-    display: flex;
-    align-items: center;
-    padding: 24px;
-    background-color: rgb(255, 255, 255);
-    z-index: auto;
-    padding-right: 24px;
-    padding-left: 24px;
-    padding-bottom: 24px;
-    padding-top: 24px;
-    position: relative;
-    font-size: 16px;
-    font-family: 'Josefin Sans', Arial, sans-serif;
+  margin-top: 16px;
+  margin-right: 16px;
+  padding: 6px;
+  color: rgb(27,27,27);
+  font-size: 16px;
+  font-weight: 600;
+  letter-spacing: .063em;
+  text-decoration: none; 
+  text-transform: uppercase;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+}
+
+.link:hover {
+    color: rgb(67,112,217); 
+}
+.closeToggle {
+  color: white;
+  font-size: 23px;
+  cursor: pointer;
+}
+.Navbar__Link_toggle {
+  display: none; /* Hide the toggle menu icon by default */
+}
+
+
+@media only screen and (max-width: 768px) {
+.navbar{
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0px;
+  overflow: hidden;
+}
+
+.navItems,
+.navLinks {
+  flex-direction: column;
+}
+
+.navLinks {
+  display:none;
+}
+
+.navLinks.show {
+  -webkit-text-size-adjust: 100%;
+  -webkit-tap-highlight-color: rgba(0,0,0,0);
+  -webkit-font-smoothing: antialiased;
+  box-sizing: inherit;
+  background-color: rgb(22, 22, 22);
+  letter-spacing: normal;
+  text-transform: none;
+  width: 100%;
+  font-family: 'Josefin Sans', Arial, sans-serif;
+  padding-top: 56px;
+  display:flex;
+  position: fixed; 
+  top: 0px; 
+  height:100%; 
+  z-index:auto; 
+  overscroll-behavior : contain; 
+  box-shadow :0px2px6px0 rgba(0,0,0,.2); 
+  transition : transform.3s ease-in-out; 
+  overflow : hidden; 
+  flex-direction : column; 
+ }
+ .Navbar__Link_toggle {
+  display: initial; /* Show the toggle menu icon on small screens */
+  position: relative;
+  cursor:pointer;
+  color: rgb(67, 112, 217);
+}
+ 
+ .closeToggle {
+   position:absolute; /* Change the position to absolute */
+   top :10px ; /* Adjust the top position */
+   right :10px ; /* Adjust the right position */
+   z-index :1 ; /* Add a z-index value */
+ }
+
+ .link {
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-font-smoothing: antialiased;
+    box-sizing: inherit;
+    background-color: transparent;
+    letter-spacing: normal;
     text-transform: none;
-  }
-  
-  
-  .navItems {
-    display: flex;
-    align-items: center;
-    margin-right: 24px;
-  }
-  
-  .title {
-    display: inline-block;
-    font-weight: 400;
-    font-size: 28px;
-    color: rgb(67, 112, 217);
-    justify-content: flex-start;
-    line-height: 1.2;
-    word-wrap: break-word;
-    max-width: 100%;
-  }
-  
-  .navLinks {
-    display: flex;
-    flex-grow: 1;
-    justify-content: flex-end;
-  }
-  
-  .linkContainer {
-    display: flex;
-    justify-content: space-between;
-  }
-  
-  .link {
-    margin-top: 16px;
-    margin-right: 16px;
-    padding: 6px;
-    color: rgb(27, 27, 27);
-    border-bottom: 1px solid;
-    font-size: 16px;
-    font-weight: 600;
-    letter-spacing: 0.063em;
-    text-decoration: none;
-    text-transform: uppercase;
     font-family: 'Josefin Sans', Arial, sans-serif;
-  }
-  */
+    padding-left: 24px;
+    padding-right: 24px;
+    align-items: center;
+    display:flex ;
+    text-decoration:none ;
+    word-wrap : break-word ;
+    cursor:pointer ; 
+    font-size :22px ; 
+    font-weight :600 ; 
+    padding-top :16px ; 
+    padding-bottom :16px ; 
+    color :rgb(247,247,247) ; 
+    min-width :200px ; 
+    justify-content : space-between ;
+ }
+}

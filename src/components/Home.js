@@ -1,6 +1,5 @@
 import React from 'react';
 import { useState } from 'react';
-import { MDBContainer, MDBRow, MDBCol, MDBInput, MDBBtn } from "mdbreact";
 
 import styles from '../CSS/home.module.css';
 function Home() {
@@ -37,7 +36,7 @@ function Home() {
     <div>
       <section  className={styles.hero}>
         <div className={styles.heroImage}>
-            <img src={process.env.PUBLIC_URL + '/images/heroimg.jpg'} alt="Hero" />
+          <img src={process.env.PUBLIC_URL + '/images/Heroimg.jpg'} alt="Hero img" />
           </div>
           <div className={styles.heroText}>
             <h1 >PROFESSIONAL, PERSONAL SOLUTIONS</h1>
@@ -51,7 +50,7 @@ function Home() {
       <section className={styles.service}>
       <div className={styles.row}>
         <div >
-            <img src={process.env.PUBLIC_URL + '/images/about1.jpg'} alt="Service1" />{/* Replace with your service image */}
+            <img src={process.env.PUBLIC_URL + '/images/about1.jpg'} alt="Service1" />
         </div>
         <div className={styles.text}>
             <h2>Personalized Software</h2>

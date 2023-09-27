@@ -2,9 +2,13 @@
   "name": "startup",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://MohammadHamzaMushtaqhashmi.github.io/StartUp",
   "dependencies": {
     "@fontsource/josefin-sans": "^5.0.12",
     "@fontsource/righteous": "^5.0.12",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@fortawesome/free-solid-svg-icons": "^6.4.2",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
@@ -14,6 +18,7 @@
     "postcss": "^8.4.30",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
+    "react-icons": "^4.11.0",
     "react-router-dom": "^6.16.0",
     "react-scripts": "^5.0.1",
     "react-tsparticles": "^2.12.2",
@@ -25,7 +30,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
@@ -46,6 +53,7 @@
     ]
   },
   "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
+    "@babel/plugin-proposal-private-property-in-object": "^7.21.11",
+    "gh-pages": "^6.0.0"
   }
 }

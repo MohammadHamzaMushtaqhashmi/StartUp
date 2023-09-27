@@ -3,11 +3,12 @@
   align-items: center;
   justify-content: space-between;
   color: white;
+  padding-top: 10px;
 }
 
 .heroText, .heroImage {
   max-width: 50%;
-  height: 400px; /* Adjust as needed */
+  height: 342px; 
 }
 
 .heroText {
@@ -38,7 +39,7 @@
 
 .heroImage img {
   width: 100%;
-  height: 400px; /* This will maintain the aspect ratio of the image */
+  height: auto; /* This will maintain the aspect ratio of the image */
 }
 
 .about{
@@ -64,10 +65,10 @@
 }
 
 .service > .row > div, .service > .rowReverse > div {
-  flex: 1 0 50%; /* This will make each div take up 50% of the container's width */
+  flex: 1 0 50%; 
 }
 .service > .rowReverse {
-  flex-direction: row-reverse; /* This will reverse the order of the image and text */
+  flex-direction: row-reverse; 
 }
 .service img {
   width: 400px;
@@ -115,7 +116,7 @@
 .reviewContent {
   /* Style the text */
   text-align: center;
-  color: white; /* Change this to the color you want for the text */
+  color: white; 
 }
 
 .reviewContent h1 {
@@ -302,4 +303,159 @@
   align-items: center;
   font-family: "Josefin Sans", Arial, sans-serif;
   overflow: visible;
+}
+/* For small screens (max-width: 600px) */
+@media (max-width: 720px) {
+  .hero {
+    flex-direction: column; /* Stack the elements vertically */
+  }
+
+  .heroText, .heroImage {
+    max-width: 100%; /* Use the full width of the screen */
+    height: auto; /* Adjust the height automatically */
+  }
+
+  .heroText h1 {
+    font-size: 36px; /* Reduce the font size of the heading */
+  }
+
+  .heroText p {
+    font-size: 18px; /* Reduce the font size of the paragraph */
+  }
+
+  .heroText button {
+    padding: 10px 20px; /* Reduce the padding of the button */
+    font-size: 16px; /* Reduce the font size of the button */
+  }
+}
+/* For small screens (max-width: 600px) */
+@media (max-width: 720px) {
+  .service {
+    flex-direction: column; /* Stack the elements vertically */
+    padding: 15px;
+    margin: 15px;
+  }
+
+  .service > .row, .service > .rowReverse  {
+    flex-direction: column; /* Stack the elements vertically */
+  }
+
+  .service > .row > div, .service > .rowReverse > div {
+    flex: 1 0 100%; /* Use the full width of the screen */
+  }
+
+  .service img {
+    width: 100%; /* Use the full width of the screen */
+    height: auto; /* Adjust the height automatically */
+    padding: 10px;
+    margin: 5px;
+  }
+
+  .text {
+    width: 100%; /* Use the full width of the screen */
+    margin: 0 auto; /* Center the text area horizontally */
+  }
+
+  .text h2 {
+    font-size: 18px; /* Reduce the font size of the heading */
+  }
+
+  .text p {
+    font-size: 14px; /* Reduce the font size of the paragraph */
+    max-width: 100%; /* Use the full width of the screen */
+  }
+}
+/* For small screens (max-width: 600px) */
+@media (max-width: 720px) {
+  .reviews {
+    height: auto; /* Adjust the height automatically */
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-shadow: none; /* Remove the text shadow */
+  }
+
+  .reviewContent h1 {
+    font-size: 24px; /* Reduce the font size of the heading */
+    margin-bottom: 20px;
+  }
+
+  .reviewContent p {
+    font-size: 14px; /* Reduce the font size of the paragraph */
+    padding-right: 20px; /* Reduce the padding of the paragraph */
+    padding-left: 20px;
+  }
+}
+/* For small screens (max-width: 600px) */
+@media (max-width: 720px) {
+  .contact { 
+    padding: 10px; 
+    margin: 10px; 
+    border-radius: 5px; 
+    box-shadow: none; /* Remove the box shadow */
+  }
+
+  .input { width: 90%; margin: 5px; }
+
+  .input input { height: 30px; font-size: 14px; }
+
+  .textarea { width: 90%; margin: 5px; }
+
+  .textarea textarea { height: 80px; font-size: 14px; }
+
+  .attachfile { width: 90%; margin: 5px; }
+
+  .attachfile button { height: 30px; width: 100px; font-size: 14px; }
+
+  .sendbutton { width :90%; margin :5px;
+
+}
+
+.sendbutton button{ height :30px ; width :100% ; border-radius :15px ; font-size :14px ;
+
+}
+}
+/* For small screens (max-width: 600px) */
+@media (max-width: 720px) {
+  .subscribe h1 {
+    font-size: 24px; /* Reduce the font size of the heading */
+    margin-bottom: 20px;
+  }
+
+  .subscribe p {
+    font-size: 14px; /* Reduce the font size of the paragraph */
+    margin-bottom: 10px;
+  }
+
+  .inputrow {
+    display: flex; /* Use flexbox to align the elements */
+    flex-direction: column; /* Stack the elements vertically */
+    align-items: center; /* Center the elements horizontally */
+    gap: 10px; /* Add some space between the elements */
+  }
+
+  .subscribe input {
+    width: 80%; /* Use a smaller width of the screen */
+    height: 30px; /* Reduce the height of the input */
+    font-size: 14px; /* Reduce the font size of the input */
+  }
+
+  .subscribe button {
+    width: 80%; /* Use a smaller width of the screen */
+    height: 30px; /* Reduce the height of the button */
+    font-size: 14px; /* Reduce the font size of the button */
+    border-radius: 15px; /* Make the button more rounded */
+  }
+}
+/* For small screens (max-width: 600px) */
+@media (max-width: 600px) {
+  .footer {
+    height: auto; /* Adjust the height automatically */
+    padding-top: 20px; /* Reduce the padding */
+    padding-bottom: 20px; /* Reduce the padding */
+  }
+
+  .footer p {
+    font-size: 14px; /* Reduce the font size */
+    text-align: center; /* Center the text */
+  }
 }
